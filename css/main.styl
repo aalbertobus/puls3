@@ -1,57 +1,87 @@
+
+aquamarin_ = #00adad 
+gray_ = #acb8b4
+pink_ = #e73981	
 body
 	background gray
 	font-size 16px
 	text-align left
+	min-width 320px
 
-	header
-		background #00adad 
-		border-bottom 3px solid #acb8b4
-		color #DDD
-		margin 0
-		padding 0.5em
-		position fixed
-		width 100%
-		
-		img
-			width 100%
+h1,h2,p,ul
+	padding 0
+	margin 0 
 
-		#titulo_nav
-			h1
-				color #e5d4c6 
-				font-family: 'Luckiest Guy', cursive;
-				font-size 3em
-				margin 0
-				padding 0
-			nav a
-				background #e73981
-				border-radius 0.2em 
-				color #ddd
-				display inline-block
-				text-decoration none
-				padding 0.3em
+img
+	width 100%
 
-			nav a:hover
-				color #333
+header
+	background aquamarin_
+	border-bottom 3px solid #333
+	color #DDD
+	margin 0
+	padding 0.5em
+	position fixed
+	width 100%
+	z-index 2
 
-		#avatar, #logo,#titulo_nav
-			display inline-block
-			vertical-align top
+	#logo,#titulo_nav,#avatar,li
+		display inline-block
+		vertical-align middle
 
-		#avatar, #logo
-			height 80px
-			width 80px
+	#logo,#avatar
+		width 60px
+		height 60px
 
-		#avatar 
-			img 
-				border-radius 3em
-				display block
-			a
-				background  #acb8b4
-				border-radius 3em
-				display block
-				margin 0
-				padding 3px
-				text-decoration none
+	#logo
+		float left
+		margin-top 0.25em
+		margin-left 0em
 
-/* #00adad    #e5d4c6    #e73981    
-#acb8b4    
+	#titulo_nav
+		h1
+			color #e5d4c6
+			font-family: 'Luckiest Guy', cursive;
+			font-size 3em
+			margin-top 0.25em
+			text-align center
+			text-shadow -2.5px 0 #333, 0 2.5px #333, 2.5px 0 #333, 0 -2.5px #333
+
+		nav
+			background-color #aaa
+			border-radius 0.75em 
+			border solid 0.1em #666
+			padding 0.7em
+			margin-bottom 0.3em
+			text-align center
+
+
+			li
+				margin 0.5em 1em
+
+				a
+					background pink_
+					border-radius 0.3em 
+					border solid 0.125em #333
+					color #444
+					padding 0.25em 0.5em
+					text-decoration none
+
+				a:hover
+					border solid 0.15em black
+					color black
+					font-weight bold
+	#avatar
+		float right
+		margin-top 0.25em
+		margin-right 2em
+
+		img 
+			border-radius 3em
+			border solid 0.2em gray_
+		img:hover
+			border-color #333
+
+
+	#titulo_nav
+		width 50%

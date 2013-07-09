@@ -1,10 +1,16 @@
-body{background:#808080;font-size:16px;text-align:left;}
-body header{background:#00adad;border-bottom:3px solid #acb8b4;color:#ddd;margin:0;padding:.5em;position:fixed;width:100%;}
-body header img{width:100%}
-body header #titulo_nav h1{color:#e5d4c6;font-family:'Luckiest Guy',cursive;font-size:3em;margin:0;padding:0}
-body header #titulo_nav nav a{background:#e73981;border-radius:.2em;color:#ddd;display:inline-block;text-decoration:none;padding:.3em}
-body header #titulo_nav nav a:hover{color:#333}
-body header #avatar,body header #logo,body header #titulo_nav{display:inline-block;vertical-align:top}
-body header #avatar,body header #logo{height:80px;width:80px}
-body header #avatar img{border-radius:3em;display:block}
-body header #avatar a{background:#acb8b4;border-radius:3em;display:block;margin:0;padding:3px;text-decoration:none}
+body{background:#808080;font-size:16px;text-align:left;min-width:320px}
+h1,h2,p,ul{padding:0;margin:0}
+img{width:100%}
+header{background:#00adad;border-bottom:3px solid #333;color:#ddd;margin:0;padding:.5em;position:fixed;width:100%;z-index:2;}
+header #logo,header #titulo_nav,header #avatar,header li{display:inline-block;vertical-align:middle}
+header #logo,header #avatar{width:60px;height:60px}
+header #logo{float:left;margin-top:.25em;margin-left:0}
+header #titulo_nav h1{color:#e5d4c6;font-family:'Luckiest Guy',cursive;font-size:3em;margin-top:.25em;text-align:center;text-shadow:-2.5px 0 #333,0 2.5px #333,2.5px 0 #333,0 -2.5px #333}
+header #titulo_nav nav{background-color:#aaa;border-radius:.75em;border:solid .1em #666;padding:.7em;margin-bottom:.3em;text-align:center;}
+header #titulo_nav nav li{margin:.5em 1em;}
+header #titulo_nav nav li a{background:#e73981;border-radius:.3em;border:solid .125em #333;color:#444;padding:.25em .5em;text-decoration:none}
+header #titulo_nav nav li a:hover{border:solid .15em #000;color:#000;font-weight:bold}
+header #avatar{float:right;margin-top:.25em;margin-right:2em;}
+header #avatar img{border-radius:3em;border:solid .2em #acb8b4}
+header #avatar img:hover{border-color:#333}
+header #titulo_nav{width:50%}
