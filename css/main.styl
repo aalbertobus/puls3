@@ -2,6 +2,7 @@
 aquamarin_ = #00adad 
 gray_ = #acb8b4
 red_ = #e53967
+cream_ = #e5d4c6 
 body
 	background gray
 	font-size 16px
@@ -19,9 +20,9 @@ header
 	background aquamarin_
 	border-bottom 3px solid #333
 	color #DDD
-	margin 0
+	margin 0 
 	padding 0.5em
-	position fixed
+	position relative
 	text-align center
 	width 100%
 	z-index 2
@@ -84,6 +85,29 @@ header
 		img:hover
 			border-color #333
 
-
-	#titulo_nav
-		width 50%
+section
+	width 100%
+	article
+		background cream_
+		padding 0.5em 1em
+		display inline-block
+		vertical-align top
+		border solid 0.15em #333
+		img
+			width 300px
+		.title
+			margin 0
+			padding 0.1em
+			background aquamarin_
+			border-radius 0.35em
+			width 100%
+			a
+				color #333
+				text-decoration none
+			.autor
+				color #ddd
+		.votes
+			float right
+			vertical-align top
+			a 
+				text-decoration none

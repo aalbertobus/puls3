@@ -1,7 +1,7 @@
 body{background:#808080;font-size:16px;text-align:left;min-width:320px}
 h1,h2,p,ul{padding:0;margin:0}
 img{width:100%}
-header{background:#00adad;border-bottom:3px solid #333;color:#ddd;margin:0;padding:.5em;position:fixed;text-align:center;width:100%;z-index:2;}
+header{background:#00adad;border-bottom:3px solid #333;color:#ddd;margin:0;padding:.5em;position:relative;text-align:center;width:100%;z-index:2;}
 header #logo,header #titulo_nav,header #avatar,header li{display:inline-block;vertical-align:middle}
 header #logo,header #avatar{width:60px;height:60px}
 header #logo{float:left;margin-top:.25em;margin-left:0}
@@ -14,4 +14,11 @@ header #titulo_nav nav li a:hover{border:solid .15em #000;color:#000;font-weight
 header #avatar{float:right;margin-top:.25em;margin-right:2em;}
 header #avatar img{border-radius:3em;border:solid .2em #acb8b4}
 header #avatar img:hover{border-color:#333}
-header #titulo_nav{width:50%}
+section{width:100%;}
+section article{background:#e5d4c6;padding:.5em 1em;display:inline-block;vertical-align:top;border:solid .15em #333;}
+section article img{width:300px}
+section article .title{margin:0;padding:.1em;background:#00adad;border-radius:.35em;width:100%;}
+section article .title a{color:#333;text-decoration:none}
+section article .title .autor{color:#ddd}
+section article .votes{float:right;vertical-align:top;}
+section article .votes a{text-decoration:none}
