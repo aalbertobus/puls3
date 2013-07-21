@@ -9,8 +9,8 @@ h1,h2,h3,hgroup,ul,p{padding:0;margin:0}
 img{width:100%}
 header{background:#00adad;border-bottom:3px solid #333;color:#ddd;margin:0;padding:.5em;position:fixed;text-align:center;width:100%;z-index:2;}
 header #logo,header #titulo_nav,header #avatar,header li{display:inline-block;vertical-align:middle}
-header #logo,header #avatar{width:60px;height:60px}
-header #logo{float:left;margin-top:.25em;margin-left:0}
+header #logo,header #avatar{width:50px;height:50px}
+header #logo{float:left;margin-top:2em;margin-left:2em}
 header #titulo_nav h1{color:#e5d4c6;font-family:'Luckiest Guy',cursive;font-size:3em;margin-top:.25em;text-shadow:-2.5px 0 #333,0 2.5px #333,2.5px 0 #333,0 -2.5px #333}
 header #titulo_nav span{font-size:.85em;color:#e53967}
 header #titulo_nav nav{background-color:#aaa;border-radius:.75em;border:solid .1em #666;padding:.7em;margin-bottom:.3em;text-align:center;}
@@ -19,11 +19,11 @@ header #titulo_nav nav li a{background:#e53967;border-radius:.3em;border:solid .
 header #titulo_nav nav li a:hover{border:solid .15em #000;color:#000;font-weight:bold}
 header #titulo_nav nav li .iconito-twitter{color:#00adad;font-weight:normal}
 header #titulo_nav nav li .iconito-github{color:#333}
-header #avatar{float:right;margin-top:.25em;margin-right:2em;}
+header #avatar{margin-top:2em;margin-right:2em;float:right;}
 header #avatar img{border-radius:3em;border:solid .2em #acb8b4}
 header #avatar img:hover{border-color:#333}
 section{text-align:center;position:relative;top:9em;}
-section article{background:#e5d4c6;border:.15em solid #000;box-shadow:0 0 5px #888;cursor:pointer;display:inline-block;vertical-align:top;margin-bottom:1em;position:relative;width:90%;}
+section article{background:#e5d4c6;border:.1em solid #000;border-radius:.2em;box-shadow:0 0 5px #888;cursor:pointer;display:inline-block;vertical-align:top;margin-bottom:1em;position:relative;width:90%;}
 section article a{color:#333;text-decoration:none}
 section article .text{background:#00adad;border-radius:.3em;margin:.2em .5em .4em .5em;padding:.1em;width:95%;}
 section article .text h3,section article .text p{margin-left:.5em;padding-top:.1em;text-align:left}
@@ -33,6 +33,10 @@ section article .points{color:#fff;font-size:1em;margin:0;padding:.5em 0;font-we
 section article .votes{background:rgba(180,180,180,0.7);border-radius:0 .3em .3em 0;float:right;margin:-4.13em -.1em 0 0;padding:.1em 0;width:30px}
 section article .up,section article .down{font-size:1.2em;color:rgba(50,50,50,0.6);}
 section article .up:hover,section article .down:hover{color:#000}
-@media screen and (min-width:768px){body section article{margin:1em 1em;width:35%}
+@media screen and (max-width:530px){body header #titulo_nav li{margin:0}
+body header #titulo_nav a{font-size:.8em}
+body header #logo,body header #avatar{height:40px;width:40px;margin:2em 0}
+body header #avatar{margin-left:-1em}
+}@media screen and (min-width:768px){body section article{margin:1em 1em s;width:35%}
 }@media screen and (min-width:1280px){body section article{margin:.5em .5em;width:20%}
 }
